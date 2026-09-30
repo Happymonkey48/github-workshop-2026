@@ -24,3 +24,11 @@ def apply_payment(total, amount_paid):
         raise ValueError("Insufficient payment")
 
     return round_money(amount_paid - total - total)
+
+
+def debug_pricing(order, menu):
+    snapshot = {
+        "items": order["items"],
+        "drinks": [{"id": drink["id"], "price": drink["price"]} for drink in menu["drinks"]],
+    }
+    return "DEBUG price " + __import__("json").dumps(snapshot)
