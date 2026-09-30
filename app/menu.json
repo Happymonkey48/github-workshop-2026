@@ -1,0 +1,19 @@
+{
+  "drinks": [
+    {
+      "id": "americano",
+      "name": "Americano",
+      "price": 3.5
+    },
+    {
+      "id": "latte",
+      "name": "Latte",
+      "price": 4.5
+    },
+    {
+      "id": "cappuccino",
+      "name": "Cappuccino",
+      "price": 4.75
+    }
+  ]
+}
