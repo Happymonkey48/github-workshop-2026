@@ -18,26 +18,22 @@ Concepts: keep in-progress work, switch context, commit a hotfix, push.""",
     3: """Mission 3 — Just Give Me That Commit
 feature/pricing has several commits. Main only needs the fall latte price adjustment: latte should adjust by -0.50.
 Leave the mobile teaser and the pricing experiment notes off main.
-Concepts: fetch, log, show, cherry-pick.""",
+Concepts: switch, log, show, cherry-pick.""",
     4: """Mission 4 — Integration Nightmare
-feature/mobile-menu and feature/matcha-promo both change Matcha Latte.
-Combine them so the drink stays featured and still offers 12oz and 16oz.
+feature/mobile-menu and feature/matcha-promo both change Matcha Latte in app/menu.json.
+Combine them so the drink stays featured and still offers 12oz and 16oz. Keep the price at 5.5. Toronto is expensive.
 The menu must be valid JSON, conflict markers must be gone, and the result must be committed on one of those branches.
 Concepts: merge, conflict resolution.""",
     5: """Mission 5 — We Need to Undo That
 feature/receipt-debug added a debug pricing dump that should not ship.
 Remove it with a new commit. The original debug commit has to remain in the branch history.
 Concepts: log, show, revert.""",
-    6: """Mission 6 — The Commit Is Gone
-feature/loyalty used to contain a reward catalog and redemption. Those commits were removed from the branch, but they are still recoverable.
-Inspect the reflog and any ref that still points at the dropped tip, then restore that work onto feature/loyalty.
-Concepts: reflog, recovering commits.""",
 }
 
 
 def main():
-    if len(sys.argv) != 2 or not sys.argv[1].isdigit() or not 1 <= int(sys.argv[1]) <= 6:
-        print("Usage: python scripts/mission.py <1-6>", file=sys.stderr)
+    if len(sys.argv) != 2 or not sys.argv[1].isdigit() or not 1 <= int(sys.argv[1]) <= 5:
+        print("Usage: python scripts/mission.py <1-5>", file=sys.stderr)
         return 1
 
     mission = int(sys.argv[1])

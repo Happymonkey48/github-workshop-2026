@@ -1,7 +1,7 @@
 """Stable identifiers for the workshop missions.
 
 Commit SHAs stay None until the workshop history has been created.
-Validators also recover those checkpoints from messages and tags.
+Validators also recover those checkpoints from commit messages.
 """
 
 BRANCHES = {
@@ -12,12 +12,8 @@ BRANCHES = {
     "matcha_promo": "feature/matcha-promo",
     "payment": "hotfix/payment",
     "receipt_debug": "feature/receipt-debug",
-    "loyalty": "feature/loyalty",
 }
 
-TAGS = {
-    "loyalty_backup": "backup/loyalty-before-reset",
-}
 
 MOCHA = {
     "id": "mocha",
@@ -57,5 +53,4 @@ COMMITS = {
     "mobile_menu_before_merge": None,
     "matcha_promo_tip": None,
     "debug_pricing": None,
-    "loyalty_lost": None,
 }
