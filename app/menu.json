@@ -18,7 +18,8 @@
     {
       "id": "matcha-latte",
       "name": "Matcha Latte",
-      "price": 5.0
+      "price": 5.25,
+      "featured": true
     }
   ]
 }
