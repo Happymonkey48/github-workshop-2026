@@ -47,10 +47,10 @@ MESSAGES = {
 }
 
 COMMITS = {
-    "menu_draft": None,
-    "checkout_wip": None,
-    "pricing_useful": None,
-    "mobile_menu_before_merge": None,
-    "matcha_promo_tip": None,
-    "debug_pricing": None,
+    "menu_draft": "125f3a47ef77c7106ee6156b48586368cb09e66f",
+    "checkout_wip": "251cfb2838d1595684acfbdd352199ccde9fb08c",
+    "pricing_useful": "255c38233d96cf303291f7c8a6bc49dbd67c3aff",
+    "mobile_menu_before_merge": "ef01900d3dc80f4972933dc699a0d700a1ef25ab",
+    "matcha_promo_tip": "535905a9704f1ca0f6747c0750f8b3169cc6d4f7",
+    "debug_pricing": "a08b9477ce2f99bcde7a29d670256135e20ec20e",
 }
