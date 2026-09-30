@@ -18,7 +18,11 @@
     {
       "id": "matcha-latte",
       "name": "Matcha Latte",
-      "price": 5.0
+      "price": 5.5,
+      "sizes": [
+        "12oz",
+        "16oz"
+      ]
     }
   ]
 }
