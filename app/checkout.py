@@ -13,3 +13,14 @@ def calculate_total(order, menu, tax_rate=0):
 
     subtotal = calculate_subtotal(order, menu)
     return round_money(subtotal + subtotal * tax_rate)
+
+
+def apply_payment(total, amount_paid):
+    if not isinstance(total, (int, float)) or isinstance(total, bool):
+        raise ValueError("total and amount_paid must be numbers")
+    if not isinstance(amount_paid, (int, float)) or isinstance(amount_paid, bool):
+        raise ValueError("total and amount_paid must be numbers")
+    if amount_paid < total:
+        raise ValueError("Insufficient payment")
+
+    return round_money(amount_paid - total - total)
