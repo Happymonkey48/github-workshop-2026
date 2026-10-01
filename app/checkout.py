@@ -23,4 +23,4 @@ def apply_payment(total, amount_paid):
     if amount_paid < total:
         raise ValueError("Insufficient payment")
 
-    return round_money(amount_paid - total - total)
+    return round_money(amount_paid - total)
